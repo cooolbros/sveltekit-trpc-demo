@@ -1,38 +1,13 @@
-# create-svelte
+# SvelteKit tRPC Demo Application
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+A SvelteKit application using tRPC
 
-## Creating a project
+### Files
 
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+| File                                                               | Location | Info                                                                                                             | External Documentation                                    |
+|--------------------------------------------------------------------|----------|------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------|
+| [src/lib/server/TRPCServer.ts](src/lib/server/TRPCServer.ts)       | Server   | Intialises the tRPC server                                                                                       | https://trpc.io/docs/v10/router#initialize-trpc           |
+| [src/lib/server/TRPCAppRouter.ts](src/lib/server/TRPCAppRouter.ts) | Server   | Declares and exports the `appRouter` and type `AppRouter`                                                        | https://trpc.io/docs/v10/router#defining-a-router         |
+| [src/routes/api/trpc/hello.ts](src/routes/api/trpc/hello.ts)       | Server   | Exports a tRPC greeting procedure that accepts a `{ name: string }` returns a `{ message: string }`              | https://trpc.io/docs/v10/procedures#with-zod              |
+| [src/lib/client/TRPCClient.ts](src/lib/client/TRPCClient.ts)       | Client   | Imports the `AppRouter` **type** and creates the tRPC client                                                     | https://trpc.io/docs/v10/vanilla#initialize-a-trpc-client |
+| [src/hooks.server.ts](src/hooks.server.ts)                         | Server   | Runs when SvelteKit recieves a request and and redirects requests to the tRPC server if the url path `/api/trpc` | https://kit.svelte.dev/docs/hooks#server-hooks            |
