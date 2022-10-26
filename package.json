@@ -22,6 +22,7 @@
 	"type": "module",
 	"dependencies": {
 		"@trpc/client": "^10.0.0-proxy-beta.26",
-		"@trpc/server": "^10.0.0-proxy-beta.26"
+		"@trpc/server": "^10.0.0-proxy-beta.26",
+		"zod": "^3.19.1"
 	}
 }
