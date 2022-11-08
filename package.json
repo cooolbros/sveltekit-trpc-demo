@@ -12,17 +12,15 @@
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "next",
 		"@sveltejs/kit": "next",
+		"@trpc/client": "^10.0.0-rc.6",
+		"@trpc/server": "^10.0.0-rc.6",
 		"svelte": "^3.44.0",
 		"svelte-check": "^2.7.1",
 		"svelte-preprocess": "^4.10.6",
 		"tslib": "^2.3.1",
 		"typescript": "^4.7.4",
-		"vite": "^3.1.0"
-	},
-	"type": "module",
-	"dependencies": {
-		"@trpc/client": "^10.0.0-proxy-beta.26",
-		"@trpc/server": "^10.0.0-proxy-beta.26",
+		"vite": "^3.1.0",
 		"zod": "^3.19.1"
-	}
+	},
+	"type": "module"
 }
