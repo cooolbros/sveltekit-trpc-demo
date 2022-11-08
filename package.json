@@ -14,12 +14,12 @@
 		"@sveltejs/kit": "next",
 		"@trpc/client": "^10.0.0-rc.6",
 		"@trpc/server": "^10.0.0-rc.6",
-		"svelte": "^3.44.0",
-		"svelte-check": "^2.7.1",
-		"svelte-preprocess": "^4.10.6",
-		"tslib": "^2.3.1",
-		"typescript": "^4.7.4",
-		"vite": "^3.1.0",
+		"svelte": "^3.52.0",
+		"svelte-check": "^2.9.2",
+		"svelte-preprocess": "^4.10.7",
+		"tslib": "^2.4.1",
+		"typescript": "^4.8.4",
+		"vite": "^3.2.3",
 		"zod": "^3.19.1"
 	},
 	"type": "module"
