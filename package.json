@@ -11,15 +11,15 @@
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "next",
-		"@sveltejs/kit": "^1.15.1",
-		"@trpc/client": "^10.18.0",
-		"@trpc/server": "^10.18.0",
-		"svelte": "^3.58.0",
-		"svelte-check": "^3.2.0",
+		"@sveltejs/kit": "^1.18.0",
+		"@trpc/client": "^10.27.3",
+		"@trpc/server": "^10.27.3",
+		"svelte": "^3.59.1",
+		"svelte-check": "^3.3.2",
 		"svelte-preprocess": "^5.0.3",
-		"tslib": "^2.5.0",
-		"typescript": "^5.0.3",
-		"vite": "^4.2.1",
+		"tslib": "^2.5.2",
+		"typescript": "^5.0.4",
+		"vite": "^4.3.8",
 		"zod": "^3.21.4"
 	},
 	"type": "module"
