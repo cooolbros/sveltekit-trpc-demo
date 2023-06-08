@@ -11,7 +11,7 @@ export const handle: Handle = async ({ event, resolve }) => {
 			createContext: async () => ({ event }),
 			path: event.url.pathname.substring("/api/trpc/".length),
 			req: {
-				body: event.request.body,
+				body: await event.request.text(),
 				headers: <HTTPHeaders><unknown>event.request.headers,
 				method: event.request.method,
 				query: event.url.searchParams
