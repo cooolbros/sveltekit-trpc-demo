@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { trpc } from "$lib/client/TRPCClient"
 
-	let name = ""
+	let name = $state("")
 
 	async function click() {
 		const greeting = await trpc.hello.query({ name: name })
@@ -15,4 +15,4 @@
 <label for="name">Name:</label>
 <input id="name" bind:value={name} />
 
-<button on:click={click}>Get greeting from tRPC</button>
+<button onclick={click}>Get greeting from tRPC</button>
