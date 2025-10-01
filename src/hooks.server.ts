@@ -9,7 +9,7 @@ export const handle: Handle = async ({ event, resolve }) => {
 			router: appRouter,
 			createContext: () => ({ event }),
 			req: event.request,
-			endpoint: "/api/trpc/"
+			endpoint: "api/trpc"
 		})
 	}
 
